@@ -23,7 +23,7 @@ def run_experiment(param_dict):
     
     start = time.time()
 
-    n_runs = np.arange(1e1)
+    n_runs = np.arange(1e3)
     progbar = utils.ProgressBar()
     space = list(np.arange(param_dict['n']))
     k = int(param_dict['k'])
@@ -56,3 +56,5 @@ for i, param in enumerate(param_dict):
 df = pd.DataFrame.from_dict(param_dict)
 print (df)
 df.to_csv('./temp/df_elapsed_time.csv', sep=';', index=None)
+
+print ("PODE DESLIGAR O PC, MAYARA!!!!!!!")
